@@ -1,0 +1,20 @@
+---
+interface Props {
+	title: string;
+	desc: string;
+    img: string;
+    url: string;
+}
+
+const { title, desc, img,url } = Astro.props;
+---
+<div class="bg-white rounded-lg shadow-md ">
+    <img class="w-full h-40 object-cover rounded-t-lg " alt=`${title}` src={`${img}`}>
+    <div class="p-4">
+        <h2 class="text-xl  font-semibold text-black">{title}</h2>
+        <p class="text-gray-600">{desc}</p>
+        <div class="flex justify-between items-center mt-4">
+            <a href={`${url}`} class="bg-red-800 hover:bg-red-600 text-white px-4 py-2 rounded-full transform hover:scale-105 transition-transform duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-400">Ver articulo</a>
+        </div>
+    </div>
+</div>

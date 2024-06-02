@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Título del artículo 1",
+      "desc": "Descripción del artículo 1",
+      "img": "https://via.placeholder.com/300",
+      "url": "https://ejemplo.com/articulo1"
+    },
+    {
+      "title": "Título del artículo 2",
+      "desc": "Descripción del artículo 2",
+      "img": "https://via.placeholder.com/300",
+      "url": "https://ejemplo.com/articulo2"
+    },
+    {
+      "title": "Título del artículo 3",
+      "desc": "Descripción del artículo 3",
+      "img": "https://via.placeholder.com/300",
+      "url": "https://ejemplo.com/articulo3"
+    }
+  ]
+  

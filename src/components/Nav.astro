@@ -1,0 +1,46 @@
+<header class="bg-red-900">
+    <div class="container flex flex-wrap justify-between items-center md:px-7 mx-auto py-4">
+        <div class="flex items-center">
+            <a href="/" class="flex items-center">
+                <img src="/img/logo.png" alt="RDS Deportes" class="w-32 md:w-28 mx-5">
+                
+            </a>
+        </div>
+        <div class="flex md:order-2">
+            <p class="max-lg:hidden text-white font-sans rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+                <i class="fa-solid fa-phone"></i> +595 983 961133
+        </p>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false" id="menu-button">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-default">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-light">
+                <li><a href="/" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Inicio</a></li>
+                <li><a href="/biografia" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Biografía</a></li>
+                <li><a href="#" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Cursos/Seminarios</a></li>
+                <li><a href="/mi-sistema" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Mi Sistema</a></li>
+                <li><a href="/lista/articulos" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Articulos</a></li>
+                <li><a href="/lista/noticias" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Noticias</a></li>
+                <li><a href="/lista/videos" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Videos</a></li>
+                <li><a href="/contacto/" class="block py-2 pr-4 pl-3 text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0">Contacto</a></li>
+            </ul>
+        </div>
+      </div>
+</header>
+<div class="bg-gray-200 py-2">
+    <p class="text-center text-black font-bold">"La juventud prefiere ser estimulada a ser instruída" <span class="text-gray-600 text-xs">- Johann W.</span></p>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('navbar-default');
+        if(menuButton && menu){
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+        });}
+    });
+</script>
